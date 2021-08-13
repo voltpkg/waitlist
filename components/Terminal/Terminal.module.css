@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+.terminalBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 9999%;
+  margin-right: 5px;
+}
+
+.terminalHeader {
+  display: flex;
+  background-color: rgb(33, 33, 33);
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+}
+
+.terminalMain {
+  padding: 20px;
+  height: 15em;
+}
+
+.terminal {
+  width: 47em;
+  border-radius: 15px;
+  background-color: rgb(27, 27, 27);
+  font-family: "Fira Code", monospace;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px black;
+  line-height: 1.7;
+}
+
+.terminal pre {
+  font-family: "Fira Code", monospace;
+  margin: 0;
+}
+
+.terminal ::selection {
+  background: rgba(144, 238, 144, 30%);
+}

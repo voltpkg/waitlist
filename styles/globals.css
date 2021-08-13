@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
-:root{
+:root {
   --primary: #171717;
-  --white: #FFFFFF;
-  --voltcolor: #22BA84;
+  --white: #ffffff;
+  --voltcolor: #22ba84;
 }
 
-body{
+body {
   padding: 0;
   margin: 0;
   overflow-y: hidden;
@@ -14,5 +14,5 @@ body{
   height: 100vh;
   background-color: var(--primary);
   width: 100vw;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }

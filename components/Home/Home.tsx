@@ -1,5 +1,7 @@
 import styles from "./Home.module.css";
 import Image from "next/image";
+import Terminal from "@components/Terminal/Terminal";
+
 export default function Home() {
   return (
     <div className={styles.main}>
@@ -13,7 +15,7 @@ export default function Home() {
       </div>
       <div className={styles.waitlist}>
         <div className={styles.icon}>
-          <Image src="/assets/email.svg" width="25%" height="25%" />
+          <Image src="/assets/email.svg" width="25%" height="25%" alt="@" />
         </div>
         <div className={styles.txtarea}>
           <input type="text" placeholder="email" />
@@ -22,7 +24,7 @@ export default function Home() {
           <span>Join Waitlist!</span>
         </div>
       </div>
-      <Image src="/assets/preview.svg" width="100vw" height="100vh"></Image>
+      <Terminal />
     </div>
   );
 }

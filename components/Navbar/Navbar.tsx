@@ -12,25 +12,29 @@ export default function Navbar() {
           alt="Volt"
         ></Image>
       </div>
-      <div style={{ paddingRight: "20px", display: "flex" }}>
-        <div style={{ margin: "10px", cursor: "pointer" }}>
+      <div style={{ paddingRight: "35px", display: "flex" }}>
+        <div style={{ margin: "50px 10px", cursor: "pointer" }}>
           <Link href="https://github.com/voltpkg" passHref>
-            <Image
-              src="/assets/github.svg"
-              width="40em"
-              height="40em"
-              alt="GitHub"
-            ></Image>
+            <a>
+              <Image
+                src="/assets/github.svg"
+                width="35"
+                height="35"
+                alt="GitHub"
+              ></Image>
+            </a>
           </Link>
         </div>
-        <div style={{ margin: "10px", cursor: "pointer" }}>
+        <div style={{ margin: "50px 10px", cursor: "pointer" }}>
           <Link href="https://discord.gg/KjzEwzXe7Z" passHref>
-            <Image
-              src="/assets/discord.svg"
-              width="40em"
-              height="40em"
-              alt="Discord"
-            ></Image>
+            <a>
+              <Image
+                src="/assets/discord.svg"
+                width="35"
+                height="35"
+                alt="Discord"
+              ></Image>
+            </a>
           </Link>
         </div>
       </div>

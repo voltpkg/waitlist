@@ -7,7 +7,7 @@ const timeout = (ms: number) =>
 export async function Animate(
   data: Token[],
   root: HTMLElement,
-  ms: number = 1
+  ms: number = 0
 ) {
   for (const token of data) {
     const curr = document.createElement("span");

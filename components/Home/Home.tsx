@@ -21,7 +21,7 @@ export default function Home() {
           <input type="text" placeholder="email" />
         </div>
         <div className={styles.submit}>
-          <span>Join Waitlist!</span>
+          <span>Join Waitlist</span>
         </div>
       </div>
       <Terminal />

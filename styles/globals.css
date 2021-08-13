@@ -1,16 +1,18 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --primary: #171717;
+  --white: #FFFFFF;
+  --voltcolor: #22BA84;
+}
+
+body{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: var(--primary);
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
 }

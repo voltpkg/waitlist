@@ -1,21 +1,29 @@
 import styles from "./Terminal.module.css";
-import AnimatedTerminal, { Animate } from "./Animation";
-import { useState, useRef, useEffect } from "react";
+import { Animate } from "./Animation";
+import { useRef, useEffect, useState } from "react";
+import { tokens } from "./tokens";
+import Pointer from "./Pointer";
 
 export default function Terminal() {
-  const [animateOutput, setAO] = useState(false);
   const cmdRef = useRef<HTMLSpanElement>();
+  const inputRef = useRef<HTMLSpanElement>();
+  const outputRef = useRef<HTMLPreElement>();
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      Animate(
+    setTimeout(async () => {
+      await Animate(
         [
           { text: "volt", color: "#1fcf83" },
           { text: " add next", color: "white" },
         ],
         cmdRef.current,
         50
-      ).then(() => setAO(true));
+      );
+
+      await Animate(tokens, outputRef.current);
+
+      setDone(true);
     }, 1000);
   }, []);
 
@@ -34,7 +42,12 @@ export default function Terminal() {
       </header>
       <main className={styles.terminalMain}>
         /dev/my-project: <span ref={cmdRef}></span>
-        {animateOutput && <AnimatedTerminal />}
+        <pre ref={outputRef}></pre>
+        {done && (
+          <span>
+            /dev/my-project: <Pointer />
+          </span>
+        )}
       </main>
     </div>
   );

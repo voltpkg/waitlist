@@ -8,8 +8,7 @@ export default function Home() {
       <div className={styles.banner}>In Development</div>
       <div>
         <div className={styles.txt}>
-          <span style={{ color: "var(--voltcolor)" }}>Rapid.</span> Reliable.
-          Reproducible.
+          <span className={styles.rapid}>Rapid.</span> Reliable. Reproducible.
         </div>
         <div className={styles.subtxt}>Develop and Deploy faster with Volt</div>
       </div>

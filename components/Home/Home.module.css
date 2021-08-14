@@ -92,3 +92,15 @@
 .submit:hover {
   background-color: #141414;
 }
+
+.rapid {
+  color: var(--voltcolor);
+}
+
+@supports (background-clip: text) {
+  .rapid {
+    background-image: linear-gradient(to bottom, #2ee4ba, #18e77e);
+    background-clip: text;
+    color: transparent;
+  }
+}

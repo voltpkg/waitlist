@@ -1,10 +1,10 @@
-.nav{
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 10vh;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    justify-content: space-between;
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  justify-content: space-between;
 }

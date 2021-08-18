@@ -21,12 +21,14 @@
   text-align: center;
   margin-bottom: 10px;
 }
+
 .txt {
   font-size: 7vh;
   font-weight: 700;
   margin-top: 10px;
   color: var(--white);
 }
+
 .subtxt {
   font-size: 25px;
   line-height: 30px;
@@ -34,9 +36,10 @@
   color: #c6c6c6;
   margin: 20px;
 }
+
 .waitlist {
   display: grid;
-  width: 40vw;
+  width: 30vw;
   margin-bottom: 50px;
   background: #141414;
   border-radius: 18px;
@@ -62,10 +65,13 @@
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
 }
+
 .txtarea {
   grid-area: 1 / 2 / 2 / 3;
 }
+
 .txtarea input {
+  font-family: "Montserrat";
   width: 95%;
   height: 100%;
   padding-left: 10px;
@@ -75,6 +81,7 @@
   color: white;
   font-size: 1em;
 }
+
 .submit {
   width: 100%;
   transition: 0.3s all;

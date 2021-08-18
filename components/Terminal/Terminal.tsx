@@ -18,13 +18,13 @@ export default function Terminal() {
           { text: " add next", color: "white" },
         ],
         cmdRef.current,
-        50
+        35
       );
 
       await Animate(tokens, outputRef.current);
 
       setDone(true);
-    }, 1000);
+    }, 0);
   }, []);
 
   return (

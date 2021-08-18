@@ -7,7 +7,7 @@ const timeout = (ms: number) =>
 export async function Animate(
   data: Token[],
   root: HTMLElement,
-  ms: number = 1
+  ms: number = 0
 ) {
   for (const token of data) {
     const curr = document.createElement("span");
@@ -19,20 +19,8 @@ export async function Animate(
     if (!token.noAnimation) {
       for (const letter of token.text) {
         curr.textContent += letter;
-        await timeout(ms);
+        await new Promise((r) => setTimeout(r, 1));
       }
     }
   }
-}
-
-export default function AnimatedTerminal() {
-  const preRef = useRef();
-
-  useEffect(() => {
-    if (!preRef.current) return;
-
-    Animate(data, preRef.current);
-  }, []);
-
-  return <pre ref={preRef} />;
 }

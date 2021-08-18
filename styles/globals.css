@@ -9,10 +9,18 @@
 body {
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh;
   background-color: var(--primary);
   width: 100vw;
   font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #2ee4ba, #18e77e);
+  border-radius: 5px;
 }
